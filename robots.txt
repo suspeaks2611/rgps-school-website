@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://suspeaks2611.github.io/rgps-school-website/sitemap.xml

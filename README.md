@@ -8,10 +8,7 @@ Open `index.html` directly, or serve this folder with a static web server. For e
 
 ## GitHub Pages deployment
 
-1. Create a GitHub repository and add the contents of this `RGPS` directory to its root (or use the chosen publishing folder).
-2. In repository Settings → Pages, choose deployment from the `main` branch and the root directory, then save.
-3. Once GitHub Pages gives the site URL, replace `YOUR-DOMAIN` in `sitemap.xml` with that canonical base URL (no trailing slash in the placeholder replacement). Add the sitemap URL to `robots.txt`.
-4. Update the Open Graph image URL in each page if the deployment domain or selected preview image changes.
+The project is configured for `https://suspeaks2611.github.io/rgps-school-website/`. The repository contains a GitHub Actions workflow at `.github/workflows/deploy.yml` that publishes the site root on pushes to `main`. In repository Settings → Pages, set the source to GitHub Actions if it is not enabled automatically. The canonical URLs, sitemap, robots file and Open Graph image URLs are configured for this Pages address; update them if the repository name or hosting domain changes.
 
 ## Custom domain
 
@@ -39,4 +36,3 @@ The four RGPS logo variants are stored under `assets/logo/`: the emblem is used 
 - Shared design system: `css/style.css`, `css/responsive.css`, `css/animations.css`.
 - Interactions: `js/main.js`, `js/forms.js`, `js/gallery.js`, `js/animations.js`.
 - SEO/deployment placeholders: `sitemap.xml`, `robots.txt`.
-
